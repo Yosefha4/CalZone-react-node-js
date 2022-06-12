@@ -1,0 +1,103 @@
+.hero {
+    background-color: var(--overlay);
+    color: rgb(5, 5, 5);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.hero:before {
+    content: '';
+    background: url('./images/screens.png') no-repeat center center/cover ;
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero .content {
+    top: -194px;
+    left: 923px;
+    width: 804px;
+    height: 1194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+  
+}
+
+.hero .content p:first-child {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.hero .content p:nth-child(2) {
+    font-size: 1.9rem;
+}
+
+.hero .content p:nth-child(3) {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+.hero .content p:nth-child(4) {
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.hero .button1 {
+    top: 614px;
+    left: 372px;
+    width: 160px;
+    height: 47px;
+    background: transparent url('images/Image-2.jpg') 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+}
+.hero .button2 {
+    top: 614px;
+    left: 545px;
+    width: 160px;
+    height: 47px;
+    background: transparent url('images/Group-149.jpg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.hero .ccc {
+    margin: 12%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hero .button:hover {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--secondary-dark);
+}
+
+@media screen and (max-width:940px) {
+    .hero .content p:nth-child(3) {
+        font-size: 2.6rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
